@@ -1,1 +1,31 @@
-Hey, my website
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>
+			Home | AddySridhar
+		</title>
+		<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="vendors/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+    </head>
+
+    <body>
+    <p>This is a website of Aditya Sridhar</p>
+
+
+    <div id="fullpage">
+	    <div class="section">Some section</div>
+	    <div class="section">Some section</div>
+	    <div class="section">Some section</div>
+	    <div class="section">Some section</div>
+    </div>
+    <script>
+	    $(document).ready(function() {
+	    $('#fullpage').fullpage();
+		});
+    </script>
+    </body>
+</html>
