@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.sidr.dark.css">
 	<style> 
 		/* Style for our header texts
 		* --------------------------------------- */
@@ -60,7 +61,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-
+	<script type="text/javascript" src="js/jquery.sidr.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -77,12 +78,12 @@
 </head>
 <body>
 
-<div id="fullpage">
+<!-- <div id="fullpage">
 	<div class="section " id="section0">
 		<div class="container">
 			<div class="page-header" style="padding-top: 70px;">
 				<h1>Aditya Sridhar</h1>
-				<!-- <div class="typedjs"></div> -->
+			
 				<p>2A Software Engineering at University of Waterloo | Web Developer | Photographer</p>
 			</div>			
 		</div>
@@ -91,7 +92,7 @@
 		<div class="container">
 			<div class="page-header" style="padding-top: 70px;">
 				<h1>About Me</h1>
-				<!-- <div class="typedjs"></div> -->
+			
 			</div>	
 			<p>You know, I am a human</p>		
 		</div>
@@ -106,14 +107,35 @@
 			<p>Patience is a virtue</p>
 		</div>
 	</div>
+</div> -->
+
+
+<a href="#sidr" id="simple-menu"><span class="glyphicon glyphicon-align-justify" style="font-size: 20px; padding: 20px; color: #000000;"></span></a>
+ 
+<div id="sidr">
+  <!-- Your content --> 
+  <ul>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Photography</a></li>
+    <li><a href="#">Contact</a></li>
+
+  </ul>
 </div>
-	<script>
-	  $(function(){
-	      $(".typedjs").typed({
-	        strings: ["First sentence.", "Second sentence."],
-	        typeSpeed: 0
-	      });
-	  });
+ 
+<script>
+$(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+</script>
+	 <script>
+	//   $(function(){
+	//       $(".typedjs").typed({
+	//         strings: ["First sentence.", "Second sentence."],
+	//         typeSpeed: 0
+	//       });
+	//   });
 	</script>
 
 </body>
