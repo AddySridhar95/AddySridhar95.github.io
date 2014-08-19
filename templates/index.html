@@ -8,30 +8,19 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../static/css/jquery.sidr.dark.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/component.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../static/js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="../static/js/jquery.sidr.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#7E8F7A'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth page']
-			});
-		});
-	</script>
+	<script type="text/javascript" src="../static/js/component.js"></script>
+	<script type="text/javascript" src="../static/js/modernizr.custom.js"></script>
 </head>
 <body>
-	test
-	<a href="#sidr" id="simple-menu"><span class="glyphicon glyphicon-align-justify" style="font-size: 20px; padding: 20px; color: #000000;"></span></a>
+<!-- 	<a href="#sidr" id="simple-menu"><span class="glyphicon glyphicon-align-justify" style="font-size: 20px; padding: 20px; color: #000000;"></span></a>
 	 
 	<div id="sidr">
-	  <!-- Your content --> 
 	  <ul>
 	    <li class="active"><a href="/">Home</a></li>
 	    <li><a href="/blog">Blog</a></li>
@@ -39,8 +28,18 @@
 	    <li><a href="/photography">Photography</a></li>
 	    <li><a href="/contact">Contact</a></li>
 	  </ul>
-	</div>
- 
+	</div> -->
+
+ 	<div class="container" style="max-width: 70%;">
+ 		<h1 style="text-align: center; font-size: 70px; padding-top: 70px;">Aditya Sridhar</h1>
+		<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+		    <a href="#" class="hi-icon hi-icon-mobile" style="background-color: #000000;">Mobile</a>
+		    <a href="#" class="hi-icon hi-icon-screen" style="background-color: #000000;">Desktop</a>
+		    <a href="#" class="hi-icon hi-icon-earth" style="background-color: #000000;">Partners</a>
+		    <a href="#" class="hi-icon hi-icon-support" style="background-color: #000000;">Support</a>
+		    <a href="#" class="hi-icon hi-icon-locked" style="background-color: #000000;">Security</a>
+		</div>
+ 	</div>
 	<script>
 	$(document).ready(function() {
 	  $('#simple-menu').sidr();
