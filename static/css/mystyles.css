@@ -8,3 +8,19 @@
 	height: 100%;
 	width: 340px;
 }
+
+.sidebar-links{
+	list-style: none;
+	height: 50px;
+	
+}
+
+.sidebar-links>a{
+	color: #000000;
+	font-size: 20px;
+}
+
+.sidebar-links>a:hover{
+	font-weight: bold;
+	text-decoration: none;
+}
