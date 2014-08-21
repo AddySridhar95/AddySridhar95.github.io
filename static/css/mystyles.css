@@ -1,0 +1,10 @@
+.sidebar{
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	background: #C9CED1;
+	height: 100%;
+	width: 340px;
+}
