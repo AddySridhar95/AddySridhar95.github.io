@@ -9,9 +9,9 @@ def home():
 def photography():
     return render_template('photography.html')
 
-@app.route("/blog")
+@app.route("/about")
 def blog():
-    return render_template('blog.html')
+    return render_template('about.html')
 
 @app.route("/contact")
 def contact():
