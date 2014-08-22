@@ -18,9 +18,37 @@
 .sidebar-links>a{
 	color: #000000;
 	font-size: 20px;
+	letter-spacing: 2px;
 }
 
 .sidebar-links>a:hover{
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.blog-post{
+	padding-top: 30px;
+}
+
+.blog-post>h1{
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 3px;
+}
+
+.title-seperator{
+	border-top:	1px solid #ccc;
+	width: 150px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	left: 0px; 	
+}
+
+.blog-date{
+	font-style: italic;
+}
+
+.blog-para{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
