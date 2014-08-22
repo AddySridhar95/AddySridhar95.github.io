@@ -31,7 +31,7 @@
 }
 
 .blog-post>h1{
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: normal;
 	letter-spacing: 3px;
 }
@@ -46,9 +46,14 @@
 
 .blog-date{
 	font-style: italic;
+	color: #aaa;
+	font-family: serif;
 }
 
 .blog-para{
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-family: calluna,Georgia,serif;
+	letter-spacing: 1px;
+	font-size: 15px;
 }
