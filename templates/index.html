@@ -18,6 +18,8 @@
 	<script type="text/javascript" src="../static/js/jquery.sidr.min.js"></script>
 	<script type="text/javascript" src="../static/js/component.js"></script>
 	<script type="text/javascript" src="../static/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="../static/js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="../static/js/script.js"></script>
 </head>
 
 <body style="height: 650px; overflow-y: scroll;">
@@ -65,7 +67,7 @@
  		</ul>
  	</div>
  	<div style="padding-left: 300px; padding-right: 100px;">
- 	<img id="blog-img"src="../static/toronto_skyline.jpg" height="300" width="auto">
+ 	<img src="../static/toronto_skyline.jpg" height="300" width="auto" class="slide js-slide">
 	 	<div class="container" style="width: 600px; height: 100%; overflow-y:scroll; padding-left: 50px;">
 	 		<!-- <h1 style="text-align: center;">BLOG</h1> -->
 	 		<div class="blog-post">
@@ -73,7 +75,7 @@
 	 		</div>
 	 		<div class="title-seperator"></div>
 	 		<div class="blog-date">20th August 2014</div>
-	 		<div class="blog-para"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived...</p></div>
+	 		<div class="blog-para"><p>This weblog post will cover the courses I took in term 1A at the University of Waterloo. As an international student, too many challenges were thrown at me. Nevertheless, I was determined to study hard during this term. I took 5 full credit and a half credit course during this term. The courses I took are....</p></div>
 	 		<div class="more-content">
 	 			<a href="#">More</a>
 	 		</div>
@@ -103,7 +105,7 @@
  	</div>
 	<script>
 		$(document).ready(function() {
-		  $('#simple-menu').sidr();
+		  // $('#simple-menu').sidr();
 		  $('#blog-img').stellar();
 		});
 	</script>
