@@ -21,6 +21,13 @@ def contact():
 def projects():
     return render_template('projects.html')
 
+@app.route("/blogpost/<number>")
+def blogpost(number):
+    print(number)
+    if number == str(1):
+        return render_template('blogpost1.html')
+    else:
+        return render_template('blognotfound.html')
 
 if __name__ == "__main__":
     app.run()
