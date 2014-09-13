@@ -3,7 +3,6 @@ AddySridhar95.github.io
 
 Personal Website
 
-Implemented using Flask<br>
 
 1)Social networks on navbar(urgent)<br>
 2)About Me Page structure<br>
