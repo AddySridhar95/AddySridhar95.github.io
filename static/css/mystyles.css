@@ -57,3 +57,53 @@
 	letter-spacing: 1px;
 	font-size: 15px;
 }
+
+.project-row{
+	margin-bottom: 20px;
+}
+
+.project-head{
+	background-color: #C9CED1;
+	margin: 10px;
+	height: 250px;
+	text-align: center
+}
+
+.project-head>h2{
+	font-size: 30px;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.project-desc{	
+	margin: 10px;
+	height: 250px;
+	background-size: cover; background-position: center center;
+	padding: 0px;
+}
+.project-desc .text{
+	opacity: 0 !important;
+}
+
+.project-desc:hover{
+	/*opacity: 0.2;*/
+}
+.project-desc:hover .text{
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 20px;
+  opacity: 1 !important;
+  font-family: 'Raleway', sans-serif;
+  height: 250px;
+  width: 600px;
+}
+#whiteboard{
+    background-image: url("../whiteboard.png");
+}
+
+#transitcheck{
+	background-image: url("../transit-check.png");
+}
+
+#thiswebsite{
+	background-image: url("../thiswebsite.png")
+}

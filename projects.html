@@ -42,19 +42,49 @@
  			<hr style="margin-top: 0px;">
  		</ul>
  	</div>
- 	<div style="padding-left: 350px; padding-right: 100px;">
+ 	<div style="padding-left: 350px; padding-right: 100px; height: 650px; overflow-y: scroll;">  
 	 	<div class="container" style="width: 900px;">
 	 		<h3>PROJECTS</h3>
-	 		Transit check
-	 		Whiteboard
-	 		Waterloo answers
-	 		This website
+	 		<div class="row project-row">
+	 			<div class="col-xs-3 project-head">
+		 			
+		 				<h2>Whiteboard</h2>
+		 				<p>Best Design Award at HackWaterloo</p>
+		 				<div style="display: inline;">
+			 				<a href="http://uwwhiteboard.com/" target="_blank"><button class="btn btn-default">Website</button></a>
+			 				<a href="https://github.com/DogWalkers/whiteboard" target="_blank"><button class="btn btn-default">Github</button></a>
+		 				</div>	 				
+	 			</div>
+	 			<div class="col-xs-8 project-desc" id="whiteboard"><div class="text">This is a standard introductory computer science course meant only for software engineering students and assumes prior programming experience. The course is taught in C programming language. The course begins with a quick introduction to fundamentals of programming like if-else conditions, loops and arrays. It then covers pointers, strings, structures, dynamic structures, Big O notation and time complexities in various sorting algorithms. Prior programming experience in languages like C, C++ or Java should help. This weblog post will cover the courses I took in term 1A at the University of Waterloo. As an international student,</div></div>
+	 		</div>
 
-<!-- 	 		Potential ones:
-	 		Google Maps API one
-	 		Something using RoR -->
+
+	 		<div class="row project-row">
+	 			<div class="col-xs-8 project-desc" id="transitcheck" style="background-size: cover;"><div class="text">This is a standard introductory computer science course meant only for software engineering students and assumes prior programming experience. The course is taught in C programming language. The course begins with a quick introduction to fundamentals of programming like if-else conditions, loops and arrays. It then covers pointers, strings, structures, dynamic structures, Big O notation and time complexities in various sorting algorithms. Prior programming experience in languages like C, C++ or Java should help. This weblog post will cover the courses I took in term 1A at the University of Waterloo. As an international student,</div></div>
+
+	 			<div class="col-xs-3 project-head">
+	 				<h2>TransitCheck</h2>
+	 				<p>Created at BattleHackToronto</p>
+	 				<div style="display: inline;">
+		 				<a href="http://battlehacktoronto-ayushbhagat.rhcloud.com/" target="_blank"><button class="btn btn-default">Website</button></a>
+		 				<a href="https://github.com/BattleHackToronto/transit-check" target="_blank"><button class="btn btn-default">Github</button></a>
+	 				</div>
+	 			</div>
+	 		</div>
+
+
+	 		<div class="row project-row">
+	 			<div class="col-xs-3 project-head">
+		 				<h2>This Website</h2>			
+		 				<div style="display: inline;">
+			 				<a href="https://github.com/AddySridhar95/AddySridhar95.github.io" target="_blank"><button class="btn btn-default">Github</button></a>
+		 				</div>	 				
+	 			</div>
+	 			<div class="col-xs-8 project-desc" id="thiswebsite"><div class="text">This is a standard introductory computer science course meant only for software engineering students and assumes prior programming experience. The course is taught in C programming language. The course begins with a quick introduction to fundamentals of programming like if-else conditions, loops and arrays. It then covers pointers, strings, structures, dynamic structures, Big O notation and time complexities in various sorting algorithms. Prior programming experience in languages like C, C++ or Java should help. This weblog post will cover the courses I took in term 1A at the University of Waterloo. As an international student,</div></div>
+	 		</div>
+	 		<br>
 	 	</div>
- 	</div>
+	</div>
 	<script>
 	$(document).ready(function() {
 	  $('#simple-menu').sidr();
