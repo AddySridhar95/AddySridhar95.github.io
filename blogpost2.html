@@ -14,55 +14,53 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/js/stellar.js"></script>
 	<script type="text/javascript" src="static/js/jquery.sidr.min.js"></script>
 	<script type="text/javascript" src="static/js/component.js"></script>
 	<script type="text/javascript" src="static/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="static/js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="static/js/script.js"></script>
 </head>
-<body>
-<body>
 
+<body style="height: 650px; overflow-y: scroll;">
  	<div class="sidebar">
  		<img src="static/aditya_linkedin.jpg" class="img-circle" width = "150" height="150" style="position: absolute; left:95px;; top: 20px;">
  		<h1 style="margin-top: 180px;">AddySridhar</h1>
-<!--  		<p>Software Engineering <a href="https://twitter.com/UWaterloo" target="blank">@UWaterloo</a><br>
- 		Web Developer<br>
- 		Photographer</p> -->
  		<hr>
  		<ul style="padding-left: 0px;">
- 			<li class="sidebar-links"><a href="/about">ABOUT ME</a></li>
+ 			<li class="sidebar-links"><a href="about.html">ABOUT ME</a></li>
  			<hr style="margin-top: 0px;">
- 			<li class="sidebar-links"><a href="/">BLOG</a></li>
+ 			<li class="sidebar-links"><a href="index.html">BLOG</a></li>
  			<hr style="margin-top: 0px;">
- 			<li class="sidebar-links"><a href="/projects">PROJECTS</a></li>
+ 			<li class="sidebar-links"><a href="projects.html">PROJECTS</a></li>
  			<hr style="margin-top: 0px;">
- 			<li class="sidebar-links"><a href="/projects">RESUME</a></li>
+ 			<li class="sidebar-links"><a href="#">RESUME</a></li>
  			<hr style="margin-top: 0px;">
- 			<li class="sidebar-links"><a href="/photography">PHOTOGRAPHY</a></li>
+ 			<li class="sidebar-links"><a href="photography.html">PHOTOGRAPHY</a></li>
  			<hr style="margin-top: 0px;">
  		</ul>
  	</div>
- 	<div style="padding-left: 340px; padding-right: 100px;">
- 	<!-- <img id="blog-img"src="static/aditya_hackathon.jpg" height="300" width="auto"> -->
- 	<!-- <img src="static/toronto_skyline.jpg" height="300" width="auto" class="slide js-slide"> -->
+ 	<div style="padding-left: 360px; padding-right: 100px;">
 	 	<div class="container" style="width: 900px;">
-	 		<h3>ABOUT ME</h3>
-	 		<p>Hey! I am Aditya and I am currently pursuing Software Engineering at the University of Waterloo.
+			<div class = "row">
 
-	 		Programming experience
+the concept of using apis:
 
-	 		Watching history documentaries
-	 		Tutoring
-	 		Photography
-	 		Blogging
-	 		<br>
-	 		Onload, should be taken to blog. </p>
-	 	</div>
+the concept behind linkedin, twitter, facebook and other famous apis.
+
+there are 2 applications, your application and the facebook/linkedin application. at some point of time, your application needs to access the facebook application. so you ask the user of your application to log into their facebook account. when they sucessfully log in, your application gets an access token. this access token is the key that your application uses to access facebook api.
+
+also introduce api key, api secret....
+oauth2.0 concept
+
+http://tutorials.jenkov.com/oauth2/index.html
+			</div>
+		</div>  
  	</div>
 	<script>
-	$(document).ready(function() {
-	  $('#simple-menu').sidr();
-	});
+		$(document).ready(function() {
+		  $('#blog-img').stellar();
+		});
 	</script>
-</body>
 </body>
 </html>

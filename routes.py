@@ -26,6 +26,10 @@ def blogpost(number):
     print(number)
     if number == str(1):
         return render_template('blogpost1.html')
+    elif number == str(2):
+    	return render_template('blogpost2.html')
+    elif number == str(3):
+    	return render_template('blogpost3.html')
     else:
         return render_template('blognotfound.html')
 

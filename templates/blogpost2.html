@@ -14,41 +14,18 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/js/stellar.js"></script>
 	<script type="text/javascript" src="static/js/jquery.sidr.min.js"></script>
 	<script type="text/javascript" src="static/js/component.js"></script>
 	<script type="text/javascript" src="static/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="static/js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="static/js/script.js"></script>
 </head>
-<body>
-	<body>
-<!-- 	<a href="#sidr" id="simple-menu"><span class="glyphicon glyphicon-align-justify" style="font-size: 20px; padding: 20px; color: #000000;"></span></a>
-	 
-	<div id="sidr">
-	  <ul>
-	    <li class="active"><a href="/">Home</a></li>
-	    <li><a href="/blog">Blog</a></li>
-	    <li><a href="/projects">Projects</a></li>
-	    <li><a href="/photography">Photography</a></li>
-	    <li><a href="/contact">Contact</a></li>
-	  </ul>
-	</div> -->
 
-<!--  	<div class="container" style="max-width: 70%;">
- 		<h1 style="text-align: center; font-size: 70px; padding-top: 70px;">Aditya Sridhar</h1>
-		<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
-		    <a href="#" class="hi-icon hi-icon-mobile" style="background-color: #000000;">Mobile</a>
-		    <a href="#" class="hi-icon hi-icon-screen" style="background-color: #000000;">Desktop</a>
-		    <a href="#" class="hi-icon hi-icon-earth" style="background-color: #000000;">Partners</a>
-		    <a href="#" class="hi-icon hi-icon-support" style="background-color: #000000;">Support</a>
-		    <a href="#" class="hi-icon hi-icon-locked" style="background-color: #000000;">Security</a>
-		</div>
- 	</div> -->
-
+<body style="height: 650px; overflow-y: scroll;">
  	<div class="sidebar">
  		<img src="static/aditya_linkedin.jpg" class="img-circle" width = "150" height="150" style="position: absolute; left:95px;; top: 20px;">
  		<h1 style="margin-top: 180px;">AddySridhar</h1>
-<!--  		<p>Software Engineering <a href="https://twitter.com/UWaterloo" target="blank">@UWaterloo</a><br>
- 		Web Developer<br>
- 		Photographer</p> -->
  		<hr>
  		<ul style="padding-left: 0px;">
  			<li class="sidebar-links"><a href="/about">ABOUT ME</a></li>
@@ -63,17 +40,27 @@
  			<hr style="margin-top: 0px;">
  		</ul>
  	</div>
- 	<div style="padding-left: 350px; padding-right: 100px;">
+ 	<div style="padding-left: 360px; padding-right: 100px;">
 	 	<div class="container" style="width: 900px;">
-	 		<h3>PHOTOGRAPHS</h3>
-	 		
-	 	</div>
+			<div class = "row">
+
+the concept of using apis:
+
+the concept behind linkedin, twitter, facebook and other famous apis.
+
+there are 2 applications, your application and the facebook/linkedin application. at some point of time, your application needs to access the facebook application. so you ask the user of your application to log into their facebook account. when they sucessfully log in, your application gets an access token. this access token is the key that your application uses to access facebook api.
+
+also introduce api key, api secret....
+oauth2.0 concept
+
+http://tutorials.jenkov.com/oauth2/index.html
+			</div>
+		</div>  
  	</div>
 	<script>
-	$(document).ready(function() {
-	  $('#simple-menu').sidr();
-	});
+		$(document).ready(function() {
+		  $('#blog-img').stellar();
+		});
 	</script>
-</body>
 </body>
 </html>
