@@ -98,7 +98,10 @@
 }
 
 .project-head>h2{
-	font-size: 30px;
+	font-size: 25px;
+	padding: 10px;
+	font-family: arial;
+	letter-spacing: 2px;
 	border-bottom: 1px solid #dcdcdc;
 }
 
