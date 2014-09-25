@@ -47,15 +47,15 @@
  				Ever wondered the purpose of an API key that gets generated when you register you app with LinkedIn? Or how does one build a server that authenticates the access to data? If yes, then you've reached the right place as I am about to explain how JSON Web Tokens work in this blog
  				<p>
  				<p style="margin-bottom: 1.5em;" class="blog-paragraph">
- 				So HTTP is a stateless protocol which means that every request is an independent request to the server and is not related to any other request. This means that if we allow the user access to access other functionalities of the app based on whether the user is logged in or not, we'll have to ask the user to log in everytime he/she sends a request to the server! So how do we go about solving this problem?  
+ 				So HTTP is a stateless protocol which means that every request is an independent request to the server and is not related to any other request. This means that if we allow the user to access other functionalities of the app based on whether the user is logged in or not, we'll have to ask the user to log in everytime he/she sends a request to the server! So how do we go about solving this problem?  
  				</p>
  				<p style="margin-bottom: 1.5em;" class="blog-paragraph">
  				<b>Analogy</b><br>
- 				Imagine that you are creating an account at a bank. You keep some amount in your account and the bank gives you a debit card to access the money from your account. Can you withdraw money from your friend's account with your debit card? Obviuosly no! As long as you have that card, you can access your account
+ 				Imagine that you are creating an bank account. You keep some amount in your account and the bank gives you a debit card to access the money from your account. Can you withdraw money from your friend's account with your debit card? Obviuosly not! As long as you have that card, only you can access your account
  				</p>
  				<p style="margin-bottom: 1.5em;" class="blog-paragraph"> 
  				<b>Back to our problem</b><br>
- 				The server of a web application is analogous to a bank. It allows a restricted flow of requests just like the bank allows restricted transaction of money. Now the question is how do we restrict only the user to access his/her profile? When the user logs in, the server returns a token. This token is usually an encode version of a JSON object containing the username. This JSON object can be decoded only by the server that encoded it. We store this token in the client side as a cookie. When the client side makes a request to the server, we pass the token along with it. The server then decodes the token and uses the username to identify the user. It can even check the validity of the user by checking if the username exists in the database or not! 
+ 				The server of a web application is analogous to a bank. It allows a restricted flow of requests just like the bank allows restricted transaction of money. Now the question is how do we allow only the user to access his/her profile? When the user logs in, the server returns a token. This token is usually an encoded version of a JSON object containing the username which is encoded by the server using a server secret. We store this token in the client side as a cookie. When the client side makes a request to the server, we pass the token along with it. The server then decodes the token and uses the username to identify the user. It can even check the validity of the user by checking if the username exists in the database or not! 
  				</p>
 
 			</div>
