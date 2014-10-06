@@ -56,12 +56,12 @@ angular.module('app', [])
 		this.var1 = "tmp";
 		this.var2 = "tmp";
 	})
-	.controller('ctrl1', ['$scope', 'myService', function ($scope, myservice) {
-		$scope.myservice = myservice
+	.controller('ctrl1', ['$scope', 'myService', function ($scope, myService) {
+		$scope.myservice = myService;
 		$scope.myservice.var1 = "This variable has been changed inside ctrl1 and is reflected on ctrl2";   
 	}])
-	.controller('ctrl2', ['$scope', 'myService', function ($scope, myservice) {
-		$scope.myservice = myservice;
+	.controller('ctrl2', ['$scope', 'myService', function ($scope, myService) {
+		$scope.myservice = myService;
 		myservice.var2 = "This variable has been changed inside ctrl2 and is reflected on ctrl1";
 	}]);
 </pre>
