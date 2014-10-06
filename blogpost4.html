@@ -62,7 +62,7 @@ angular.module('app', [])
 	}])
 	.controller('ctrl2', ['$scope', 'myService', function ($scope, myService) {
 		$scope.myservice = myService;
-		myservice.var2 = "This variable has been changed inside ctrl2 and is reflected on ctrl1";
+		$scope.myservice.var2 = "This variable has been changed inside ctrl2 and is reflected on ctrl1";
 	}]);
 </pre>
 			</div>
