@@ -1,0 +1,23 @@
+There are 10 friends sitting in a circular formation. Each friend speaks a word of the sentence "The sun rises in the east". When the sentence has been spoken twice, the order reverses.
+Eg:
+Friend no.    Word
+1             The
+2			  sun
+3             rises
+4             in 
+5             the
+6             east 
+7             The
+8             sun
+9             rises
+10            in
+1             the 
+2             east
+1             the     //Notice that the order reverses here.
+10            in
+9             rises 
+8             sun
+7             The
+
+
+Print the list for 1000 iterations. Each line should contain the friend number and word he/she speaks.
