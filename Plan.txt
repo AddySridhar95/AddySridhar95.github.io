@@ -1,4 +1,0 @@
-1) Introductory page with social network links. Also a resume page
-2) Detailed About Me page (not urgent)
-3) Projects Page (slider?) or all at once
-4) 
