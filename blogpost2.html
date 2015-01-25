@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>AddySridhar</title>
+
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/jquery.sidr.dark.css">
+	<link rel="stylesheet" type="text/css" href="static/css/mystyles.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/js/stellar.js"></script>
+	<script type="text/javascript" src="static/js/jquery.sidr.min.js"></script>
+	<script type="text/javascript" src="static/js/script.js"></script>
+</head>
+
+<body style="height: 100%; overflow-y: scroll;">
+ 	<div class="sidebar">
+ 		<img src="static/aditya_linkedin.jpg" class="img-circle" width = "150" height="150" style="position: absolute; left:95px;; top: 20px;">
+ 		<h1 style="margin-top: 180px;">AddySridhar</h1>
+ 		
+ 		<ul style="padding-left: 0px;">
+ 		 	<li class="sidebar-links"><a href="https://www.linkedin.com/in/addysridhar" target="_blank"><img src="static/Linkedin.png"></a><a href="https://github.com/AddySridhar95" target="_blank"><img src="static/Github.png" style="padding-left:10px;"></a><a href="https://twitter.com/AddySridhar" target="_blank"><img src="static/Twitter.png" style="padding-left:10px;"></a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="about.html">ABOUT ME</a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="index.html">BLOG</a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="projects.html">PROJECTS</a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="static/AdityaSridharResumeCoop2.pdf" target="_blank">RESUME</a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="https://www.flickr.com/photos/128475607@N02/" target="_blank">PHOTOGRAPHY</a></li>
+ 			<hr style="margin-top: 0px;">
+ 		</ul>
+ 	</div>
+
+<!--  	<div style="display: inline;">
+ 		<span class="glyphicon glyphicon-arrow-right" style="float: right; right: -60px; margin-top: 15px; font-size: 30px;"></span>
+ 		<span class="glyphicon glyphicon-arrow-left" style="float: left; left: 20px; margin-top: 15px; font-size: 30px; display: none;"></span> 		
+ 	</div> -->
+ 	<div style="padding-left: 360px; padding-right: 100px;">
+
+
+	 	<div class="container" style="width: 900px;">
+			<div class = "row blog-row">
+				<header class = "page-header blog-header">
+					<h1>Concept behind OAuth 2.0</h1>
+					<p>8th September 2014</p>
+				</header>
+				<br>
+				<p style="margin-bottom: 1.5em;" class="blog-paragraph">
+					In the later part of my co-op term at <a href="http://www.careerify.net/" target="_blank">Careerify Corporation</a>, I was involved in making the main application use OAuth 2.0 (which was previously using Oauth 1.0a) to access LinkedIn APIs. I'd like to share my understanding of how OAuth 2.0 works in this blog.			
+				</p>
+				
+				<img src="static/oauth2.png" style="width: 350px; height: 250px; display: inline; float: left; margin-right: 10px;">
+				<!-- margin-left: auto; margin-right: auto; display: block;  -->
+
+				<p style="margin-bottom: 1.5em; margin-left:10px;" class="blog-paragraph">
+					OAuth 2.0 allows an application access the user's data in another application without gaining access to the user's credentials for that application. You might have come across applications that require you to log into applications like Facebook or LinkedIn. Once logged in, these applications can gain access to your Facebook or LinkedIn information without knowing the credentials of your Facebook account. OAuth 2.0 lets third party applications gain access to user's information on some other application. To quote the OAuth website, "The OAuth 2.0 authorization framework enables a third-party application to obtain limited access to an HTTP service". 
+				</p>
+
+				
+
+				<p style="margin-bottom: 1.5em;" class="blog-paragraph">
+					For the purpose of demonstration, lets say the third party application uses LinkedIn information of the user. So the authenticating application in this case is LinkedIn. The developer of the third party application, while registering the application with Linkedin specifies one or more redirect URIs. This means that the authenticating application can successfuly redirect the user to one of those URIs. It is at this stage that the developer gets the API key and the API secret key. 
+				</p>
+				<p style="margin-bottom: 1.5em;" class="blog-paragraph">
+					The user clicks a button that redirects him to a page that asks him to enter his LinkedIn credentials. The user enters the credentials and grants the third party application access to user's account on LinkedIn. LinkedIn then redirects the user to the redirect URI specified by the developer and appends an authentication code to the URI. Now, the third party application makes a POST call to the authenticating application and exchanges the authentication code for access token. This access token is the key to the treasure trove of information LinkedIn has. The client application can then make API calls to LinkedIn and access users data using the access token, without which, the access is not possible.
+				</p>
+
+				<p style="margin-bottom: 1.5em;" class="blog-paragraph">
+					Note that OAuth grants the third party application access to the Linkedin APIs without laying hands on the user's Linkedin credentials. This is essential because the user would not want to disclose his credentials! 
+				</p>
+
+				<p style="margin-bottom: 1.5em;" class="blog-paragraph"><i>Acknowledgement: I used <a href="http://tutorials.jenkov.com/oauth2/index.html" target="_blank">this website</a> to obtain the image that demonstrates how OAuth 2.0 works</i></p>
+				<br><br>
+			</div>
+		</div>  
+ 	</div>
+	<script>
+		$(document).ready(function() {
+		  $('#blog-img').stellar();
+		});
+	</script>
+</body>
+</html>
