@@ -1,3 +1,99 @@
----
-layout: resume
----
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>AddySridhar</title>
+
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/mystyles.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/js/stellar.js"></script>
+</head>
+<body style="height: 100%; overflow-y: scroll;">
+ 	<div class="sidebar">
+ 		<img src="static/aditya_linkedin.jpg" class="img-circle" width = "150" height="150" style="position: absolute; left:95px;; top: 20px;">
+ 		<h1 style="margin-top: 180px;">AddySridhar</h1>
+ 		
+ 		<ul style="padding-left: 0px;">
+ 		 	<li class="sidebar-links"><a href="https://www.linkedin.com/in/addysridhar" target="_blank"><img src="static/Linkedin.png"></a><a href="https://github.com/AddySridhar95" target="_blank"><img src="static/Github.png" style="padding-left:10px;"></a><a href="https://twitter.com/AddySridhar" target="_blank"><img src="static/Twitter.png" style="padding-left:10px;"></a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="about.html">ABOUT ME</a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="index.html">BLOG</a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="projects.html">PROJECTS</a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="static/resume-2b.pdf" target="_blank">RESUME</a></li>
+ 			<hr style="margin-top: 0px;">
+ 			<li class="sidebar-links"><a href="https://500px.com/adityasridhar2" target="_blank">PHOTOGRAPHY</a></li>
+ 			<hr style="margin-top: 0px;">
+ 		</ul>
+ 	</div>
+
+ 	<div style="padding-left: 300px; padding-right: 100px;">
+ 		<!-- <img id="blog-img" src="static/toronto_skyline.jpg" height="300" width="auto"> -->
+	 	<div class="container" style="width: 900px; padding-left: 70px;"> <!-- style="height: 100%; overflow-x: hidden; overflow-y:scroll; padding-left: 50px;" -->
+<!-- <img id="blog-img" src="static/toronto_skyline.jpg" height="300" width="auto"> -->
+
+	 		<div class="blog-post">
+	 			<h1>AngularJS: PASS DATA ACROSS CONTROLLERS</h1>
+	 		</div>
+	 		<div class="title-seperator"></div>
+	 		<div class="blog-date">5th October 2014</div>
+	 		<div class="blog-para"><p>AngularJS controller allows you to attach a part of your DOM to particular scope. The scope holds data that your can use in the DOM that it is attached to. It is a good idea it create a separate controller for different parts of the DOM. This keeps the code clean, easy to maintain and debug. However, one may need to access a scope variable defined in one controller in some another controller. AngularJS services help solve this issue.<br>
+	 		Here is how you would use a service to solve the issue.</p></div>
+	 		<div class="more-content">
+	 			<a href="blogpost4.html">More</a>
+	 		</div>
+
+
+
+	 		<div class="blog-post">
+	 			<h1>JSON WEB TOKENS</h1>
+	 		</div>
+	 		<div class="title-seperator"></div>
+	 		<div class="blog-date">24th September 2014</div>
+	 		<div class="blog-para"><p>Ever wondered the purpose of an API key that gets generated when you register you app with LinkedIn? Or how does one build a server that authenticates the access to data? If yes, then you've reached the right place as I am about to explain how JSON Web Tokens work in this blog</p></div>
+	 		<div class="more-content">
+	 			<a href="blogpost3.html">More</a>
+	 		</div>	
+
+
+
+	 		<div class="blog-post">
+	 			<h1>CONCEPT BEHIND OAuth 2.0</h1>
+	 		</div>
+	 		<div class="title-seperator"></div>
+	 		<div class="blog-date">8th September 2014</div>
+	 		<div class="blog-para"><p>In the later part of my co-op term at Careerify Corporation, I was involved in making the main application use OAuth 2.0 (which was previously using OAuth 1.0a) to access LinkedIn APIs. I'd like to share my understanding of how OAuth 2.0 works in this blog.</p></div>
+	 		<div class="more-content">
+	 			<a href="blogpost2.html">More</a>
+	 		</div>	 		
+
+
+
+	 		<div class="blog-post">
+	 			<h1>1A SOFTWARE ENGINEERING AT WATERLOO</h1>
+	 		</div>
+	 		<div class="title-seperator"></div>
+	 		<div class="blog-date">15th January 2014</div>
+	 		<div class="blog-para"><p>This weblog post will cover the courses I took in term 1A at the University of Waterloo. As an international student, too many challenges were thrown at me. Nevertheless, I was determined to study hard during this term. I took 5 full credit and a half credit course during this term. The courses I took are....</p></div>
+	 		<div class="more-content">
+	 			<a href="blogpost1.html">More</a>
+	 		</div>
+
+	 		<br><br>
+	 		
+	 	</div>
+ 	</div>
+	<script>
+		$(document).ready(function() {
+		  $('#blog-img').stellar();
+		});
+	</script>
+</body>
+</html>
