@@ -76,6 +76,11 @@ a:hover {
     color: #000000;
 }
 
+.projects a {
+    color: #000000;
+    font-weight: bold;
+}
+
 @media(max-width:768px) {
     .name {
         font-size: 50px;
@@ -113,4 +118,8 @@ a:hover {
     .subname {
         font-size: 20px;
     }
+
+.row {
+    border-bottom: 1px solid #C2C0C2;
+}
 }
